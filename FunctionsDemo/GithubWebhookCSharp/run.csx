@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Runtime.Remoting.Messaging;
 
 public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceWriter log, IAsyncCollector<string> outputQueue)
 {
@@ -15,7 +16,9 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     //log.Info($"Json: {json}");
 
     //await outputQueue.AddAsync(json);
-    await outputQueue.AddAsync($"{userUrl}:{gitHubComment}");
+    var comment = $"{userUrl}:{gitHubComment}";
+    log.Info(comment);
+    await outputQueue.AddAsync(comment);
 
     return req.CreateResponse(HttpStatusCode.OK,"Okay");
 }
