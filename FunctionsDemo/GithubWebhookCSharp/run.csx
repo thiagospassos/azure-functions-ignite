@@ -11,5 +11,8 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     string gitHubComment = data?.comment?.body;
     log.Info($"Comment: {gitHubComment}");
 
+    var json = await response.Content.ReadAsStringAsync();
+    log.Info($"Json: {json}");
+
     return req.CreateResponse(HttpStatusCode.OK, "From Github:" + gitHubComment);
 }
