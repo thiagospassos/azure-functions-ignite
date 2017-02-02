@@ -11,6 +11,13 @@
       "type": "http",
       "direction": "out",
       "name": "res"
+    },
+    {
+      "type": "queue",
+      "name": "outputQueue",
+      "queueName": "ignite",
+      "connection": "storage",
+      "direction": "out"
     }
   ]
 }
