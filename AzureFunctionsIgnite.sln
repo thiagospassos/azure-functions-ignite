@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{33AD0EE8-D99B-4E14-8CD9-3F56ABEF97A2}") = "TimerFunction", "TimerFunction\TimerFunction.funproj", "{5328EB99-20CF-443B-9FCE-FC7149E7EB9C}"
+Project("{33AD0EE8-D99B-4E14-8CD9-3F56ABEF97A2}") = "FunctionsDemo", "FunctionsDemo\FunctionsDemo.funproj", "{D706A40F-08C5-4129-A347-BA3BFAC904CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5328EB99-20CF-443B-9FCE-FC7149E7EB9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5328EB99-20CF-443B-9FCE-FC7149E7EB9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5328EB99-20CF-443B-9FCE-FC7149E7EB9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5328EB99-20CF-443B-9FCE-FC7149E7EB9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D706A40F-08C5-4129-A347-BA3BFAC904CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D706A40F-08C5-4129-A347-BA3BFAC904CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D706A40F-08C5-4129-A347-BA3BFAC904CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D706A40F-08C5-4129-A347-BA3BFAC904CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
