@@ -11,13 +11,13 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     string userUrl = data?.comment?.user?.url;
 
     //log.Info($"Comment: {gitHubComment}");
-
     //var json = await req.Content.ReadAsStringAsync();
     //log.Info($"Json: {json}");
-
-    //await outputQueue.AddAsync(json);
+    
     var comment = $"{userUrl}:{gitHubComment}";
     log.Info(comment);
+
+    //adding to storage queue
     await outputQueue.AddAsync(comment);
 
     return req.CreateResponse(HttpStatusCode.OK,"Okay");
